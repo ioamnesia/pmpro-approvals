@@ -140,7 +140,7 @@ class PMPro_Approvals {
     public static function admin_menu(){
     	global $menu, $submenu;
 
-		add_submenu_page( 'pmpro-membershiplevels', __( 'Approvals', 'pmpro-approvals' ), __( 'Approvals', 'pmpro-approvals' ), 'pmpro_approvals', 'pmpro-approvals', array( 'PMPro_Approvals', 'admin_page_approvals' ) );
+		add_submenu_page( 'pmpro-dashboard', __( 'Approvals', 'pmpro-approvals' ), __( 'Approvals', 'pmpro-approvals' ), 'pmpro_approvals', 'pmpro-approvals', array( 'PMPro_Approvals', 'admin_page_approvals' ) );
 
 		$user_count = PMPro_Approvals::getApprovalCount();
 
